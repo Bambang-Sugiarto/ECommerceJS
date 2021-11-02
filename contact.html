@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <title>E-Commerce</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Bams Digital</a>
+      <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-primary" id="tombolku" href="#" >Login</button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!--end navbar-->
+
+  <!--end carousel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="gmb/bg1.jpg" class="d-block gambar" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="gmb/bg2.jpg" class="d-block gambar" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="gmb/bg3.jpg" class="d-block gambar" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--end carousel-->
+  
+  <!--end content-->
+
+  <!-- modal-->
+ <div id="myModal" class="penghalang">
+  <div class="modal-content">
+    <a id="tutup">&times;</a>
+    <div class="modal-content-header">
+        <h4>Form Login</h4> <hr>
+    </div>
+    <div class="modal-content-header">
+      <form class="form">
+        <div>
+          <label class="text-label" style="margin-bottom: 5px;"><b>Email Address</b></label>
+          <input style="margin-bottom: 10px;" class="form-control" type="text" placeholder="Enter email">
+        </div>
+        <div>
+          <label class="text-label" style="margin-bottom: 5px;"><b>Password</b></label>
+          <input class="form-control" style="margin-bottom: 15px;" type="password" placeholder="Enter password">
+        </div>
+        <div>
+          <button class="btn btn-primary" style="margin-bottom: 5px;">Submit</button>
+        </div>
+      </form>
+      <hr>
+      <div style="float: right;">
+        
+        <button class="btn btn-light" style="margin-bottom: 5px;">Close</button>
+        <button class="btn btn-primary" style="margin-bottom: 5px;">Save Change</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal-->
+  <!-- end content-->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h3 class="text-center" style="margin-top: 20px; margin-bottom: 30px;"><u>Form Contact</u></h3>
+          </div>
+      </div>
+      <div class="row">
+
+          <div class="col-md-4">
+                <h4 style="color: blue;">Address 1</h4>
+                <p>
+                    Ds. Kertayasa, RT.04/RW.01, Kec. Kramat, Kab. Tegal
+                    Jawa Tengah (52181), Indonesia
+                </p>
+                <h4 style="color: blue;">Address 2</h4>
+                <p>
+                    Jln. Nakula 01 no.38, Pendrikan Kidul, Semarang Tengah, Kota Semarang, 
+                    Jawa Tengah
+                </p>
+          </div>
+          
+            <div class="col-md-8">
+            <form onsubmit="event.preventDefault();dataKu();" autocomplete="off">
+                <div>
+                    
+                    <input placeholder="Full Name" class="form-control" type="text" name="name" id="name" style="margin-bottom: 10px;" required>
+                </div>
+                <div>
+                    
+                    <input placeholder="Phone Number" class="form-control" type="text" name="phone" id="phone" style="margin-bottom: 10px;" required>
+                </div>
+                <div>
+                    
+                    <input class="form-control" placeholder="Email Address" type="text" name="email" id="email" style="margin-bottom: 10px;" required>
+                </div>
+                <div>
+                    
+                    <input class="form-control" type="text" name="message" placeholder="Messages" id="message" style="margin-bottom: 10px;" required>
+                </div>
+                <div class="form-action-buttons">
+                    <input class="btn btn-outline-primary" style="margin-top: 3px;" type="submit" value="Submit">
+                </div>
+            </form>                 
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center" style="margin-top: 30px; margin-bottom: 30px;"><u>View Data</u></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <table class="table" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+      </div>
+    
+  </div>
+  
+  <!-- footer-->
+  <div id="footer" class="bg bg-dark">
+    <div class="container">
+      <p class="text-white">@Copyright Bams Digital 2021 All Right Reserved</p>
+    </div>
+  </div>
+  <!-- end footer-->
+  <!-- end footer-->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function() {
+      var i = window.pageYOffset;
+      if (i > 200) {
+        nav.classList.add('bg-dark', 'shadow')
+      } else {
+        nav.classList.remove('bg-dark', 'shadow')
+      }
+    });
+  </script>
+
+<script>
+  var modal = document.getElementById('myModal')
+  var btn = document.getElementById('tombolku')
+  var span = document.getElementById('tutup')
+
+  btn.onclick = function()
+  {
+      modal.style.display = "block"    
+  }
+  span.onclick = function()
+  {
+      modal.style.display = "none"    
+  }
+  window.onclick = function(e)
+  {
+      if(e.target == modal)
+      {
+          modal.style.display = "none"    
+      }
+  }
+</script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
